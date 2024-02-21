@@ -31,6 +31,14 @@ public class User {
     private String firstname;
     private String lastname;
 
+    public String getPassword() {return password;}
+
+    public void setPassword(String password) {this.password = password;}
+
+    private String password;
+
+    private boolean rank_user;
+
     public Long getId() {
         return id;
     }
@@ -54,4 +62,7 @@ public class User {
     public void setLastname(String lastname) {
         this.lastname = lastname;
     }
+ public boolean isRank_user() {return rank_user;}
+
+public void setRank_user(boolean rank_user) {this.rank_user = rank_user;}
 }
