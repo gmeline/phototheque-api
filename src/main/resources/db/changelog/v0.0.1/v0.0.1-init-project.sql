@@ -28,7 +28,7 @@ CREATE TABLE Image(
    url_miniature VARCHAR(50),
    compteur_telechargement VARCHAR(50),
    categorie_id INT,
-   utilisateur_id INT NOT NULL,
+   utilisateur_id INT,
    PRIMARY KEY(id),
    FOREIGN KEY(categorie_id) REFERENCES Categorie(id),
    FOREIGN KEY(utilisateur_id) REFERENCES Utilisateur(id)
