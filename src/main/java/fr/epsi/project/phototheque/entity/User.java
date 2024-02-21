@@ -31,27 +31,30 @@ public class User {
     private String firstname;
     private String lastname;
 
-    public Long getId() {
-        return id;
-    }
+    private String pseudo;
+    private String password;
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+    private boolean rank_user;
+    public Long getId() {return id;}
 
-    public String getFirstname() {
-        return firstname;
-    }
+    public void setId(Long id) {this.id = id;}
 
-    public void setFirstname(String firstname) {
-        this.firstname = firstname;
-    }
+    public String getFirstname() {return firstname;}
 
-    public String getLastname() {
-        return lastname;
-    }
+    public void setFirstname(String firstname) {this.firstname = firstname;}
 
-    public void setLastname(String lastname) {
-        this.lastname = lastname;
-    }
+    public String getLastname() {return lastname;}
+
+    public void setLastname(String lastname) {this.lastname = lastname;}
+    public String getPseudo() {return pseudo;}
+
+    public void setPseudo(String pseudo) {this.pseudo = pseudo;}
+
+    public String getPassword() {return password;}
+
+    public void setPassword(String password) {this.password = password;}
+
+    public boolean isRank_user() {return rank_user;}
+
+    public void setRank_user(boolean rank_user) {this.rank_user = rank_user;}
 }
