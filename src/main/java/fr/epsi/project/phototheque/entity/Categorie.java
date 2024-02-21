@@ -3,7 +3,7 @@ package fr.epsi.project.phototheque.entity;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "categories")
+@Table(name = "categorie")
 public class Categorie {
 
     @Id
